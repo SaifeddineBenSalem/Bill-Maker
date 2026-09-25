@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+    app:layout_constraintBottom_toTopOf="@id/iconLayout">
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/table_border"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+    <!-- Name Row -->
+    <TableRow>
+        <TextView
+            android:id="@+id/label_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/edittext_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:textColorHint="@color/black"
+            android:textColor="@android:color/black"
+            android:inputType="text"/>
+    </TableRow>
+
+    <!-- Type Row -->
+    <TableRow>
+        <TextView
+            android:id="@+id/label_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type :"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <Spinner
+            android:id="@+id/type"
+            android:textColor="@android:color/black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/label_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description :"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Description"
+            android:textColorHint="@color/black"
+            android:inputType="text"
+            android:maxLines="4"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/label_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country :"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <Spinner
+            android:id="@+id/country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_weight="1" />
+    </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/label_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload a photo :"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+        </TableRow>
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/photoImageView"
+                android:layout_width="200dp"
+                android:layout_marginBottom="16dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:src="@drawable/imageplaceholder" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/uploadButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Photo"
+                android:layout_marginTop="16dp"
+                android:layout_weight="2"/>
+        </TableRow>
+
+
+        <TableRow>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2">
+
+                <Button
+                    android:id="@+id/submitButton"
+                    android:layout_width="382dp"
+                    android:layout_height="match_parent"
+                    android:text="Submit"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </TableRow>
+
+</TableLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/iconLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/articles"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:background="@drawable/border"
+            android:src="@drawable/articles" />
+
+        <ImageView
+            android:id="@+id/forum"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/border"
+            android:src="@drawable/forum" />
+
+        <ImageView
+            android:id="@+id/dashboard"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/currentborder"
+            android:src="@drawable/dashboardselected" />
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/border"
+            android:src="@drawable/settings" />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/border"
+            android:src="@drawable/profile" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
