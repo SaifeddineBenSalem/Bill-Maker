@@ -374,6 +374,30 @@ These are potential improvements, not features currently provided by the applica
 
 No license file or license declaration was found in the repository. This project should not be redistributed under a specific open-source license unless the owner adds one.
 
+## License
+
+No license file or license declaration was found in the repository. This project should not be redistributed under a specific open-source license unless the owner adds one.
+
+## 📸 Screenshots
+
+![Bill Maker Screenshot](photos/1.jpg)
+
+![Bill Maker Screenshot](photos/2.jpg)
+
+![Bill Maker Screenshot](photos/3.jpg)
+
+![Bill Maker Screenshot](photos/4.jpg)
+
+![Bill Maker Screenshot](photos/5.jpg)
+
+![Bill Maker Screenshot](photos/6.jpg)
+
+![Bill Maker Screenshot](photos/7.jpg)
+
+![Bill Maker Screenshot](photos/8.jpg)
+
+![Bill Maker Screenshot](photos/page_1.png)
+
 ## Acknowledgements
 
 The application uses the following third-party libraries:
