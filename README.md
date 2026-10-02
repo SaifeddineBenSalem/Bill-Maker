@@ -1,6 +1,6 @@
-# Facture Maker
+# Bill Maker
 
-Facture Maker is a Java Android application for registering users, managing profiles, and publishing product or company requests. It provides a local request board with user and administrator workflows, including request submission, browsing, search, moderation, and profile management.
+Bill Maker is a Java Android application for registering users, managing profiles, and publishing product or company requests. It provides a local request board with user and administrator workflows, including request submission, browsing, search, moderation, and profile management.
 
 > This README describes the implementation currently present in the repository. The application is a single-module Android project and does not include a remote backend or network API.
 
